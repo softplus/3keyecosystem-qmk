@@ -1,0 +1,15 @@
+{
+    "keyboard_name": "2key2",
+    "url": "",
+    "maintainer": "3-Key-Ecosystem",
+    "width": 2,
+    "height": 1,
+    "layouts": {
+        "LAYOUT": {
+            "layout": [
+                {"label": "k00", "x": 0, "y": 0},
+                {"label": "k01", "x": 1, "y": 0}
+            ]
+        }
+    }
+}
