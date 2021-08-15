@@ -1,19 +1,18 @@
-# 3-Key-Ecosystem - 4key2
+# 3-Key-Ecosystem - 2key2
 
-![keyboard](imgur.com image replace me!)
+![keyboard](https://i.imgur.com/IJ1Zyc7.jpeg)
 
-*2x1 macro keyboard built with multi-purpose keyboard mount, designed by John Mueller*
+This is a 2x1 macro keyboard with WS2812B key lighting.
+It's designed for a modular keyboard mount using an ATmega32U4.
 
-* Keyboard Maintainer: [johnmu](https://github.com/softplus)
-* Code: [johnmu](https://github.com/softplus/3keyecosystem-qmk-private)
-* Hardware Supported: *3keyecosystem-4key2 + 3keyecosystem-kbmount*
-* Hardware Availability: [nowhere](https://localhost:8080)
-
+* Keyboard Maintainer: [softplus](https://github.com/softplus)
+* Hardware Supported: [3keyecosystem-2key2](https://github.com/softplus/3keyecosystem/tree/main/2key2)
+* 
 Make example for this keyboard (after setting up your build environment):
 
     `make 3keyecosystem/2key2:default`
 
-or flash with:
+or flash it (requires hitting the reset button on the main board):
 
     `make 3keyecosystem/2key2:default:flash`
 
