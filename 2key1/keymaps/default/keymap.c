@@ -1,4 +1,4 @@
-/* Copyright 2021 johnmu
+/* Copyright 2021 John Mueller
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -25,5 +25,17 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     /* Base */
     [_BASE] = LAYOUT(
         KC_A,    KC_B
+    ),
+
+    [1] = LAYOUT(
+        KC_TRNS, KC_TRNS
+    ),
+
+    [2] = LAYOUT(
+        KC_TRNS, KC_TRNS
+    ),
+
+    [3] = LAYOUT(
+        KC_TRNS, KC_TRNS
     )
 };

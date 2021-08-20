@@ -1,7 +1,7 @@
 {
-    "keyboard_name": "kai6",
-    "url": "",
-    "maintainer": "3-Key-Ecosystem",
+    "keyboard_name": "3-Key-Ecosystem kai6: 3x2 macro-keyboard",
+    "url": "https://github.com/softplus/3keyecosystem/tree/main/kai6",
+    "maintainer": "softplus",
     "width": 3,
     "height": 2,
     "layouts": {
@@ -11,9 +11,9 @@
                 {"label": "k01", "x": 1, "y": 0},
                 {"label": "k02", "x": 2, "y": 0},
 
-                {"label": "k10", "x": 0, "y": 1, "w": 1},
-                {"label": "k11", "x": 1, "y": 1, "w": 1},
-                {"label": "k12", "x": 2, "y": 1, "w": 1}
+                {"label": "k10", "x": 0, "y": 1},
+                {"label": "k11", "x": 1, "y": 1},
+                {"label": "k12", "x": 2, "y": 1}
             ]
         }
     }

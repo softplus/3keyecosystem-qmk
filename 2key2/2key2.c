@@ -15,11 +15,11 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 #include "2key2.h"
-#include "quantum/rgb_matrix.h"
 
 // RGB Matrix configuration
 // based on https://docs.qmk.fm/#/feature_rgb_matrix?id=common-configuration
 
+#ifdef RGB_MATRIX_ENABLE
 led_config_t g_led_config = { {
   // Key Matrix to LED Index
   {   0, 1 }
@@ -32,3 +32,4 @@ led_config_t g_led_config = { {
   // https://docs.qmk.fm/#/feature_rgb_matrix?id=flags
   LED_FLAG_ALL, LED_FLAG_ALL
 } };
+#endif

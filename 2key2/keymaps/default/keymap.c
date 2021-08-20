@@ -13,7 +13,6 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-#include "quantum.h" 
 #include QMK_KEYBOARD_H
 
 // Defines names for use in layer keycodes and the keymap
@@ -24,6 +23,18 @@ enum layer_names {
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     /* Base */
     [_BASE] = LAYOUT(
-        KC_C,    KC_B
+        KC_A,    KC_B
+    ),
+
+    [1] = LAYOUT(
+        KC_TRNS, KC_TRNS
+    ),
+
+    [2] = LAYOUT(
+        KC_TRNS, KC_TRNS
+    ),
+
+    [3] = LAYOUT(
+        KC_TRNS, KC_TRNS
     )
 };

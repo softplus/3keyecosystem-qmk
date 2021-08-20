@@ -7,8 +7,6 @@ BOOTLOADER = caterina
 # Build Options
 #   change yes to no to disable
 #
-DEFAULT_FOLDER = 3keyecosystem/4key2/v1
-
 BOOTMAGIC_ENABLE = lite     # Virtual DIP switch configuration
 MOUSEKEY_ENABLE = no        # Mouse keys
 EXTRAKEY_ENABLE = yes       # Audio control and System control
@@ -22,4 +20,3 @@ BACKLIGHT_ENABLE = no       # Enable keyboard backlight functionality
 RGBLIGHT_ENABLE = yes       # Enable keyboard RGB underglow
 BLUETOOTH_ENABLE = no       # Enable Bluetooth
 AUDIO_ENABLE = no           # Audio output
-TAP_DANCE_ENABLE = yes

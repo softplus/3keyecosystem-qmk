@@ -15,24 +15,31 @@
  */
 #include "kai6.h"
 
+#ifdef LED_MATRIX_ENABLE
 led_config_t g_led_config = { {
-  // Key Matrix to LED Index
+  // Key matrix to LED index
   {   0, 1, 2 },
   {   3, 4, 5 }
 }, {
-  // LED Index to Physical Position
+  // LED index to equidistant physical position
   {   0,   0 }, {  64,   0 }, { 128,   0 }, 
   {   0,  64 }, {  64,  64 }, { 128,  64 } 
 }, {
-  // LED Index to Flag
+  // LED index to flag
   LED_FLAG_ALL, LED_FLAG_ALL, LED_FLAG_ALL, 
   LED_FLAG_ALL, LED_FLAG_ALL, LED_FLAG_ALL
 } };
+#endif
 
+// uncomment if you need to force a mode
 void matrix_init_user(void) {
+#ifdef LED_MATRIX_ENABLE
     // initialize LED matrix & pick a mode
     led_matrix_enable();
     //led_matrix_mode(LED_MATRIX_SOLID_SPLASH);
-    led_matrix_mode(LED_MATRIX_CYCLE_LEFT_RIGHT);
+    //led_matrix_mode(LED_MATRIX_CYCLE_LEFT_RIGHT);
+    led_matrix_mode(LED_MATRIX_BREATHING);
     led_matrix_set_speed(150);
+#endif
 };
+/* */

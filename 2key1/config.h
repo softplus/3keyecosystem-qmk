@@ -1,5 +1,5 @@
 /*
-Copyright 2021 johnmu
+Copyright 2021 John Mueller
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -14,14 +14,13 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-
 #pragma once
 
 #include "config_common.h"
 
 /* USB Device descriptor parameter */
-#define VENDOR_ID    0xFEED
-#define PRODUCT_ID   0x0000
+#define VENDOR_ID    0x1209
+#define PRODUCT_ID   0x3303
 #define DEVICE_VER   0x0001
 #define MANUFACTURER 3-Key-Ecosystem
 #define PRODUCT      2key1
@@ -46,3 +45,16 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 /* disable these deprecated features by default */
 #define NO_ACTION_MACRO
 #define NO_ACTION_FUNCTION
+
+/* LED matrix features */
+#ifdef LED_MATRIX_ENABLE
+#define LED_MATRIX_PINS { B2, D3}
+#define LED_DRIVER_LED_COUNT 2
+#define DRIVER_LED_TOTAL LED_DRIVER_LED_COUNT
+#define LED_MATRIX_KEYPRESSES
+#define LED_MATRIX_FRAMEBUFFER_EFFECTS
+#define LED_DISABLE_WHEN_USB_SUSPENDED true
+#define LED_MATRIX_STARTUP_MODE LED_MATRIX_SOLID
+#define DISABLE_LED_MATRIX_TYPING_HEATMAP
+#define LED_MATRIX_LED_FLUSH_LIMIT 8 // default 16ms (calls 1/16ms)
+#endif

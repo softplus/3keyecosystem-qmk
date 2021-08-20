@@ -1,23 +1,25 @@
 # 3-Key-Ecosystem - 2key1
 
-![keyboard](imgur.com image replace me!)
+![2key1 Keyboard](https://i.imgur.com/ZCmLLSc.jpg)
 
-*2x1 macro keyboard built with multi-purpose keyboard mount, designed by John Mueller*
+This is a 2x1 macro keyboard with per-key LED lighting.
+It's designed for a modular keyboard mount using an ATmega32U4.
+Created by John Mueller.
 
-* 2 keys (1 row, 2 col), 2 independent LEDs
-* Uses kbmount (based on ATmega32U4, like Pro Micro)
-* Keymap for A / B keys, no special functions
-* Keyboard Maintainer: [johnmu](https://github.com/softplus)
-* Code: [johnmu](https://github.com/softplus/3keyecosystem-qmk)
-* Hardware Supported: *3-key-ecosystem-2key1 + 3-key-ecosystem-kbmount*
-* Hardware Availability: [nowhere](https://github.com/softplus/3keyecosystem)
+* Keyboard Maintainer: [softplus](https://github.com/softplus)
+* Hardware Supported: [3keyecosystem-2key1](https://github.com/softplus/3keyecosystem/tree/main/2key1)
+* Hardware Availability: Open-Source files at above link
 
 Make example for this keyboard (after setting up your build environment):
 
     `make 3keyecosystem/2key1:default`
 
-or flash with:
+or flash it (requires hitting the reset button on the main board):
 
     `make 3keyecosystem/2key1:default:flash`
+
+## Bootloader
+
+To Enter the bootloader, click reset button on the main board.
 
 See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_tools) and the [make instructions](https://docs.qmk.fm/#/getting_started_make_guide) for more information. Brand new to QMK? Start with our [Complete Newbs Guide](https://docs.qmk.fm/#/newbs).

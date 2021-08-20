@@ -19,8 +19,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include "config_common.h"
 
 /* USB Device descriptor parameter */
-#define VENDOR_ID    0xFEED
-#define PRODUCT_ID   0x0000
+#define VENDOR_ID    0x1209
+#define PRODUCT_ID   0x3304
 #define DEVICE_VER   0x0001
 #define MANUFACTURER 3-Key-Ecosystem
 #define PRODUCT      2key2
@@ -48,7 +48,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define RGB_MATRIX_STARTUP_HUE 90
 #define RGB_MATRIX_STARTUP_SPD 20
 #define RGB_MATRIX_STARTUP_VAL 128
-//#define RGB_MATRIX_MAXIMUM_BRIGHTNESS 200 // limits maximum brightness of LEDs to 200 out of 255. If not defined maximum brightness is set to 255
 #define RGB_MATRIX_FRAMEBUFFER_EFFECTS
 #define RGB_DISABLE_WHEN_USB_SUSPENDED true
 
