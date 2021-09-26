@@ -15,7 +15,7 @@
  */
 #include "4key1.h"
 
-#ifdef LED_MATRIX_ENABLE
+#if defined(LED_MATRIX_ENABLE) || defined(RGB_MATRIX_ENABLE)
 led_config_t g_led_config = { {
   // Key matrix to LED index
   {   0, 1 },
@@ -40,6 +40,13 @@ void matrix_init_user(void) {
     //led_matrix_mode(LED_MATRIX_CYCLE_LEFT_RIGHT);
     led_matrix_mode(LED_MATRIX_BREATHING);
     led_matrix_set_speed(150);
+#endif
+#ifdef RGB_MATRIX_ENABLE
+    // initialize fake RGB matrix & pick a mode
+    rgb_matrix_enable();
+    //rgb_matrix_mode(RGB_MATRIX_JELLYBEAN_RAINDROPS);
+    rgb_matrix_mode(RGB_MATRIX_SOLID_REACTIVE_NEXUS);
+    rgb_matrix_set_speed(100);
 #endif
 };
 /* */

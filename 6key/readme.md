@@ -1,19 +1,25 @@
-# 3-Key-Ecosystem - 6key2
+# 3-Key-Ecosystem - 6key devices (6key2, kai6)
 
-![00kbmount_6key2](imgur.com image replace me!)
+![6key devices](https://i.imgur.com/AQfIblM.jpg)
 
-3x2 macro keyboard built with multi-purpose keyboard mount, designed by John Mueller
+This is a 3x2 macro keyboard.
+It's designed for a modular keyboard mount using an ATmega32U4.
+There are two versions: 6key2 (uses WS2812B & kbmount), and kai6 (uses individual LEDs).
 
-* Keyboard Maintainer: [johnmu](https://github.com/softplus)
-* Hardware Supported: *3keyecosystem-6key2 + 3keyecosystem-kbmount*
-* Hardware Availability: [nowhere](https://localhost:8080)
+* Keyboard Maintainer: [softplus](https://github.com/softplus)
+* Hardware Supported: [3keyecosystem-6key2](https://github.com/softplus/3keyecosystem/tree/main/6key2) and [kai6](https://github.com/softplus/3keyecosystem/tree/main/one-offs/kai6)
+* Hardware Availability: Open-Source files at above link
 
 Make example for this keyboard (after setting up your build environment):
 
-    make 3keyecosystem/6key2:default
+    make 3keyecosystem/6key/6key2:default
 
-or flash with:
+Flashing example for this keyboard:
 
-    make 3keyecosystem/6key2:default:flash
+    make 3keyecosystem/6key/6key2:default:flash
+
+## Bootloader
+
+To Enter the bootloader, click reset button on the main board.
 
 See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_tools) and the [make instructions](https://docs.qmk.fm/#/getting_started_make_guide) for more information. Brand new to QMK? Start with our [Complete Newbs Guide](https://docs.qmk.fm/#/newbs).

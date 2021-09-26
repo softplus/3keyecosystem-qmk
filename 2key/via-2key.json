@@ -1,0 +1,12 @@
+{
+    "name": "3keyecosystem 2key 1x2",
+    "vendorId": "0x1209",
+    "productId": "0x3304",
+    "keycodes": ["via/keycodes", "via/qmk_lighting"],
+    "menus": ["via/keymap", "via/layouts", "via/macros", "via/save_load", "core/qmk_rgblight"],
+    "matrix": {"rows": 1, "cols": 2},
+    "lighting": "qmk_rgblight",
+    "layouts": {
+      "keymap": [["0,0", "0,1"]]
+    }
+  }

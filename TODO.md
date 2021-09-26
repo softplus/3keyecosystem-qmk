@@ -9,4 +9,8 @@
 
 # Done
 
-
+* 2key, 4key, 6key: refactored to include all variants in folder
+* 4key types: new vid/pid: 1209/3305
+* 6key types: new vid/pid: 1209/3306
+* 2key, 4key, 6key: created via.json files
+* 

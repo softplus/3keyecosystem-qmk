@@ -20,7 +20,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define PRODUCT      6key2
 
 #define MATRIX_ROW_PINS { F6, C6 }
-#define MATRIX_COL_PINS { F4, D7, D3} // r1: F4,D7,D3 ; r2: F4,D7,B5
+#define MATRIX_COL_PINS { F4, B5, D7} // rev1: F4,D7,D3 ; rev2: F4,B5,D7
 
 /* COL2ROW, ROW2COL */
 #define DIODE_DIRECTION COL2ROW

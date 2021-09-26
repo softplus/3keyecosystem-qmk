@@ -1,9 +1,7 @@
 {
-    "keyboard_name": "3-Key-Ecosystem 6key2: 3x2 macro-keyboard",
+    "keyboard_name": "3-Key-Ecosystem 6key: 3x2 macro-keyboards",
     "url": "https://github.com/softplus/3keyecosystem/tree/main/6key2",
     "maintainer": "softplus",
-    "width": 3,
-    "height": 2,
     "layouts": {
         "LAYOUT_ortho_2x3": {
             "layout": [

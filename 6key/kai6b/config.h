@@ -27,7 +27,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 /* COL2ROW, ROW2COL */
 #define DIODE_DIRECTION ROW2COL
 
-
 /* Defines for our LED matrix driver */
 #ifdef LED_MATRIX_ENABLE
 #define LED_DRIVER_COUNT 1
@@ -50,5 +49,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define RGB_MATRIX_FRAMEBUFFER_EFFECTS
 #define RGB_DISABLE_WHEN_USB_SUSPENDED true
 #define RGB_MATRIX_STARTUP_MODE RGB_MATRIX_SOLID_COLOR
-//#define RGB_MATRIX_LED_FLUSH_LIMIT 8 // default 16ms (calls 1/16ms)
+#define RGB_MATRIX_LED_FLUSH_LIMIT 8 // default 16ms (calls 1/16ms)
 #endif

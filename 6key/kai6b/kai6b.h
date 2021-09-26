@@ -16,8 +16,3 @@
 #pragma once
 
 #include "quantum.h"
-
-const led_matrix_driver_t led_matrix_driver;
-
-#define LED_MATRIX_WAIT_US_PWM 4 // default 1us
-#define LED_MATRIX_TIME_DIVISOR 4 // makes loop shorter
