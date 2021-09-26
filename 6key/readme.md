@@ -7,7 +7,7 @@ It's designed for a modular keyboard mount using an ATmega32U4.
 There are two versions: 6key2 (uses WS2812B & kbmount), and kai6 (uses individual LEDs).
 
 * Keyboard Maintainer: [softplus](https://github.com/softplus)
-* Hardware Supported: [3keyecosystem-6key2](https://github.com/softplus/3keyecosystem/tree/main/6key2) and [kai6](https://github.com/softplus/3keyecosystem/tree/main/one-offs/kai6)
+* Hardware Supported: [3keyecosystem-6key2](https://github.com/softplus/3keyecosystem/tree/main/6key/6key2) and [kai6](https://github.com/softplus/3keyecosystem/tree/main/6key/kai6)
 * Hardware Availability: Open-Source files at above link
 
 Make example for this keyboard (after setting up your build environment):

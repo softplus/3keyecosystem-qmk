@@ -7,7 +7,7 @@ It's designed for a modular keyboard mount using an ATmega32U4.
 There are two versions: 4key1 (uses individual LEDs), and 4key2 (uses WS2812B LEDs).
 
 * Keyboard Maintainer: [softplus](https://github.com/softplus)
-* Hardware Supported: [3keyecosystem-4key1](https://github.com/softplus/3keyecosystem/tree/main/4key1) and [4key2](https://github.com/softplus/3keyecosystem/tree/main/4key2)
+* Hardware Supported: [3keyecosystem-4key1](https://github.com/softplus/3keyecosystem/tree/main/4key/4key1) and [4key2](https://github.com/softplus/3keyecosystem/tree/main/4key/4key2)
 * Hardware Availability: Open-Source files at above link
 
 Make example for this keyboard (after setting up your build environment):
