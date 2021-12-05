@@ -20,7 +20,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define PRODUCT      6key2
 
 #define MATRIX_ROW_PINS { F6, C6 }
-#define MATRIX_COL_PINS { F4, B5, D7} // rev1: F4,D7,D3 ; rev2: F4,B5,D7
+#define MATRIX_COL_PINS { F4, B5, D7 } // rev1: F4,D7,D3 ; rev2: F4,B5,D7
 
 /* COL2ROW, ROW2COL */
 #define DIODE_DIRECTION COL2ROW
@@ -30,15 +30,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #ifdef RGB_MATRIX_ENABLE
 #define RGB_DI_PIN B2
 #define DRIVER_LED_TOTAL 6
-// #define RGB_MATRIX_KEYPRESSES
-// #define RGB_MATRIX_STARTUP_MODE RGB_MATRIX_SOLID_REACTIVE
 #define RGB_MATRIX_STARTUP_HUE 200
 #define RGB_MATRIX_STARTUP_SPD 20
 #define RGB_MATRIX_STARTUP_VAL 128
 #define RGB_MATRIX_FRAMEBUFFER_EFFECTS
 #define RGB_DISABLE_WHEN_USB_SUSPENDED true
-#define ENABLE_RGB_MATRIX_ALPHAS_MODS	
-#define ENABLE_RGB_MATRIX_BREATHING	
-#define ENABLE_RGB_MATRIX_RAINBOW_PINWHEELS	
-#define ENABLE_RGB_MATRIX_BAND_VAL	
+// must ENABLE any used RGB_MATRIX effects in {keymap}/config.h 
+// see https://docs.qmk.fm/#/feature_rgb_matrix?id=rgb-matrix-effects
+// and https://www.reddit.com/r/olkb/comments/r3r693/qmk_breaking_changes_2021_november_27_changelog/
 #endif
