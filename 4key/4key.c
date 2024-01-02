@@ -14,3 +14,24 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 #include "4key.h"
+
+// RGB Matrix configuration
+// based on https://docs.qmk.fm/#/feature_rgb_matrix?id=common-configuration
+
+#ifdef RGB_MATRIX_ENABLE
+led_config_t g_led_config = { {
+  // Key Matrix to LED Index
+  { 0, 1 },
+  { 3, 2 }
+}, {
+  // LED Index to Physical Position
+  // Using range { 0..224, 0..64 }
+  { 0,   0 }, { 224,   0 },
+  { 0,  64 }, { 224,  64 }
+}, {
+  // LED Index to Flag
+  // https://docs.qmk.fm/#/feature_rgb_matrix?id=flags
+  LED_FLAG_ALL, LED_FLAG_ALL,
+  LED_FLAG_ALL, LED_FLAG_ALL
+} };
+#endif
