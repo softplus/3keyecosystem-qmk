@@ -4,7 +4,7 @@
 
 This is a 3x2 macro keyboard.
 It's designed for a modular keyboard mount using an ATmega32U4.
-There are two versions: 6key2 (uses WS2812B & kbmount), and kai6 (uses individual LEDs).
+There are two versions: 6key (uses WS2812B & kbmount), and kai6 (uses individual LEDs).
 
 * Keyboard Maintainer: [softplus](https://github.com/softplus)
 * Hardware Supported: [3keyecosystem-6key2](https://github.com/softplus/3keyecosystem/tree/main/6key/6key2) and [kai6](https://github.com/softplus/3keyecosystem/tree/main/6key/kai6)

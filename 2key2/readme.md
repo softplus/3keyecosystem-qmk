@@ -1,6 +1,6 @@
 # 3-Key-Ecosystem - 2key devices (2key1, 2key2)
 
-![2key devices](https://i.imgur.com/IJ1Zyc7.jpeg)
+![2key2 macro keyboard](https://i.imgur.com/IJ1Zyc7.jpeg)
 
 This is a 2x1 macro keyboard.
 It's designed for a modular keyboard mount using an ATmega32U4.
@@ -11,11 +11,11 @@ It's designed for a modular keyboard mount using an ATmega32U4.
 
 Make example for this keyboard (after setting up your build environment):
 
-    make 3keyecosystem/2key:default
+    qmk compile -kb 3keyecosystem/2key2 -km default
 
 Flashing example for this keyboard:
 
-    make 3keyecosystem/2key:default:flash
+    qmk flash -kb 3keyecosystem/2key2 -km default
 
 ## Bootloader
 

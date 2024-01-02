@@ -1,5 +1,5 @@
 {
-    "name": "3keyecosystem 2key 1x2",
+    "name": "3keyecosystem 2key2 1x2",
     "vendorId": "0x1209",
     "productId": "0x3304",
     "keycodes": ["via/keycodes", "via/qmk_lighting"],
