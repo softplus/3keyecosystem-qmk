@@ -17,15 +17,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #pragma once
 
-#define PRODUCT      kai6
-
 /* key matrix pins */
-#define MATRIX_ROW_PINS { F0, F1 }
-#define MATRIX_COL_PINS { F4, F5, F6 }
-#define UNUSED_PINS
+#define MATRIX_ROW_PINS { F0, F1 }      // overrides ../info.json
+#define MATRIX_COL_PINS { F4, F5, F6 }  // overrides ../info.json
 
 /* COL2ROW, ROW2COL */
-#define DIODE_DIRECTION ROW2COL
+#define DIODE_DIRECTION ROW2COL         // overrides ../info.json
 
 /* Defines for our LED matrix driver */
 #ifdef LED_MATRIX_ENABLE
@@ -50,4 +47,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define RGB_DISABLE_WHEN_USB_SUSPENDED true
 #define RGB_MATRIX_STARTUP_MODE RGB_MATRIX_SOLID_COLOR
 #define RGB_MATRIX_LED_FLUSH_LIMIT 8 // default 16ms (calls 1/16ms)
+#define ENABLE_RGB_MATRIX_SOLID_REACTIVE_NEXUS
 #endif

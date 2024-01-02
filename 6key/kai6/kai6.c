@@ -13,7 +13,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-#include "kai6.h"
+#include "quantum.h"
 
 #if defined(LED_MATRIX_ENABLE) || defined(RGB_MATRIX_ENABLE)
 led_config_t g_led_config = { {
@@ -22,11 +22,11 @@ led_config_t g_led_config = { {
   {   3, 4, 5 }
 }, {
   // LED index to equidistant physical position
-  {   0,   0 }, {  64,   0 }, { 128,   0 }, 
-  {   0,  64 }, {  64,  64 }, { 128,  64 } 
+  {   0,   0 }, {  64,   0 }, { 128,   0 },
+  {   0,  64 }, {  64,  64 }, { 128,  64 }
 }, {
   // LED index to flag
-  LED_FLAG_ALL, LED_FLAG_ALL, LED_FLAG_ALL, 
+  LED_FLAG_ALL, LED_FLAG_ALL, LED_FLAG_ALL,
   LED_FLAG_ALL, LED_FLAG_ALL, LED_FLAG_ALL
 } };
 #endif
