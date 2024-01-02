@@ -17,9 +17,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #pragma once
 
+#define TAPPING_TERM 200
+
 #ifdef RGB_MATRIX_ENABLE
-#define ENABLE_RGB_MATRIX_ALPHAS_MODS	
-#define ENABLE_RGB_MATRIX_BREATHING	
-#define ENABLE_RGB_MATRIX_RAINBOW_PINWHEELS	
-#define ENABLE_RGB_MATRIX_BAND_VAL	
+#define ENABLE_RGB_MATRIX_ALPHAS_MODS
+#define ENABLE_RGB_MATRIX_BREATHING
+#define ENABLE_RGB_MATRIX_RAINBOW_PINWHEELS
+#define ENABLE_RGB_MATRIX_BAND_VAL
 #endif

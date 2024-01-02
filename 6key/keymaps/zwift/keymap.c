@@ -18,8 +18,8 @@
 
 // Defines names for use in layer keycodes and the keymap
 enum layer_names {
-    LAYER_BASE, 
-    LAYER_RACE, 
+    LAYER_BASE,
+    LAYER_RACE,
     LAYER_NEXT
 };
 
@@ -41,54 +41,54 @@ typedef enum {
 
 /* Return an integer that corresponds to what kind of tap dance should be executed.
  */
-td_state_t cur_dance(qk_tap_dance_state_t *state) {
+td_state_t cur_dance(tap_dance_state_t *state) {
     if (state->count == 1) {
         if (state->interrupted || !state->pressed) return TD_SINGLE_TAP;
     } else if (state->count == 2) {
         if (!state->interrupted && !state->pressed) return TD_DOUBLE_TAP;
     }
-    return TD_UNKNOWN; 
+    return TD_UNKNOWN;
 }
 
 // Handle tap for mode-button
-void tap_mode(qk_tap_dance_state_t *state, void *user_data) {
+void tap_mode(tap_dance_state_t *state, void *user_data) {
     td_state_t td_state = cur_dance(state);
     switch (td_state) {
-        case TD_SINGLE_TAP: 
+        case TD_SINGLE_TAP:
             // next layer
-            if (IS_LAYER_ON(LAYER_BASE)) 
+            if (IS_LAYER_ON(LAYER_BASE))
                 layer_move(LAYER_RACE);
             else if (IS_LAYER_ON(LAYER_RACE))
                 layer_move(LAYER_NEXT);
             else layer_move(LAYER_BASE);
-            break; 
-        case TD_DOUBLE_TAP: 
+            break;
+        case TD_DOUBLE_TAP:
             SEND_STRING("Johannes\n");
-            break; 
+            break;
         default: break;
     }
 }
 
 // Handle tap for next-button
-void tap_next(qk_tap_dance_state_t *state, void *user_data) {
+void tap_next(tap_dance_state_t *state, void *user_data) {
     td_state_t td_state = cur_dance(state);
     switch (td_state) {
         case TD_SINGLE_TAP: // media next
             tap_code(KC_MEDIA_NEXT_TRACK);
             //rgb_matrix_mode_noeeprom(1);
-            break; 
-        case TD_DOUBLE_TAP: 
+            break;
+        case TD_DOUBLE_TAP:
             tap_code(KC_MEDIA_PLAY_PAUSE);
             //rgb_matrix_mode_noeeprom(3);
-            break; 
+            break;
         default: break;
     }
 }
 
 // Tapdance references
-qk_tap_dance_action_t tap_dance_actions[] = {
-  [TD_MODE] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, tap_mode, NULL), 
-  [TD_NEXT] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, tap_next, NULL) 
+tap_dance_action_t tap_dance_actions[] = {
+  [TD_MODE] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, tap_mode, NULL),
+  [TD_NEXT] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, tap_next, NULL)
 };
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
@@ -121,7 +121,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     clockbyte = TCNT0 % 256;
 
     const char *str_1[] = {
-        "Is there a starbucks here?", "I need a coffee.", 
+        "Is there a starbucks here?", "I need a coffee.",
         "Where's the coffee?", "Garcon, une espresso.",
         "Coffee cup of Ride Ons!",
         "Take expresso pulls, leave ride ons!",
@@ -129,7 +129,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 
     };
     const char *str_2[] = {
-        "Switzerland checking in", "Hi from switzerland", 
+        "Switzerland checking in", "Hi from switzerland",
         "Land-of-cheese says hi",
         "Switzerland in the house."
     };
@@ -165,13 +165,13 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         case TX_1_02:
             selected = clockbyte % sizeof(str_2) / sizeof(str_2[0]);
             send_string(str_2[selected]);
-            return false;            
+            return false;
 
         case TX_1_03:
             send_string("m ");
             selected = clockbyte % sizeof(str_3) / sizeof(str_3[0]);
             send_string(str_3[selected]);
-            return false;            
+            return false;
 
         case TX_2_01:
         case TX_2_02:
@@ -179,7 +179,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
             send_string("m ");
             selected = clockbyte % sizeof(str_4) / sizeof(str_4[0]);
             send_string(str_4[selected]);
-            return false;            
+            return false;
     }
     return true; // all other codes
 }
