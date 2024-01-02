@@ -20,16 +20,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define MATRIX_ROWS 2
 #define MATRIX_COLS 2
 
-#define MATRIX_ROW_PINS { F6, C6 }
-#define MATRIX_COL_PINS { F4, D7 }
-
-/* COL2ROW, ROW2COL */
-#define DIODE_DIRECTION COL2ROW
-
-#define LED_CAPS_LOCK_PIN B7 // onboard LED
-
 #ifdef RGB_MATRIX_ENABLE
-#define WS2812_DI_PIN B2
 #define DRIVER_LED_TOTAL 4
 #define RGB_MATRIX_KEYPRESSES
 #define RGB_MATRIX_STARTUP_MODE RGB_MATRIX_SOLID_REACTIVE
