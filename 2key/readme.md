@@ -4,19 +4,18 @@
 
 This is a 2x1 macro keyboard.
 It's designed for a modular keyboard mount using an ATmega32U4.
-There are two versions: 2key1 (uses individual LEDs), and 2key2 (uses WS2812B LEDs).
 
 * Keyboard Maintainer: [softplus](https://github.com/softplus)
-* Hardware Supported: [3keyecosystem-2key1](https://github.com/softplus/3keyecosystem/tree/main/2key/2key1) and [2key2](https://github.com/softplus/3keyecosystem/tree/main/2key/2key2)
+* Hardware Supported: [3keyecosystem-2key2](https://github.com/softplus/3keyecosystem/tree/main/2key/2key2)
 * Hardware Availability: Open-Source files at above link
 
 Make example for this keyboard (after setting up your build environment):
 
-    make 3keyecosystem/2key/2key2:default
+    make 3keyecosystem/2key:default
 
 Flashing example for this keyboard:
 
-    make 3keyecosystem/2key/2key2:default:flash
+    make 3keyecosystem/2key:default:flash
 
 ## Bootloader
 
